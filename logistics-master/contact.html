@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Request a Quotation - Medart Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+  </head>
+  <body>
+  
+  <!-- NABAR start --> 
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <a href="index.html" class="text-white h2 mb-0"><img src="images/logo.png"></a>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-children">
+                  <a href="services.html">Services</a>
+                  <ul class="dropdown" style="display: block;">
+                    <li><a href="domestic-and-international-freight-transport.html">Domestic and international freight transport</a></li>
+                    <li><a href="oversized-transport.html">Ovsersized transport</a></li>
+                    <li><a href="refrigerated-transport.html">Refrigerated transport</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="blog-soon.html">Blog</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <div class="multilingual-container">
+                  <div class="globe-icon">
+                    <span class="icon fas fa-globe"></span>
+                  </div>
+                  <div class="language-menu">
+                    <div class="language-item">
+                      <a href="contact-ro.html">RO</a>
+                    </div>
+                    <div class="language-item">
+                      <a href="contact.html" class="active">EN</a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+    <!-- NABAR end --> 
+    <script>
+      const globeIcon = document.querySelector('.globe-icon');
+      const languageMenu = document.querySelector('.language-menu');
+      let timeoutId;
+    
+      globeIcon.addEventListener('mouseover', () => {
+        clearTimeout(timeoutId);
+        languageMenu.style.display = 'block';
+      });
+    
+      globeIcon.addEventListener('mouseout', () => {
+        timeoutId = setTimeout(() => {
+          languageMenu.style.display = 'none';
+        }, 100); // Adjust the duration (in milliseconds) as needed
+      });
+    
+      languageMenu.addEventListener('mouseover', () => {
+        clearTimeout(timeoutId);
+      });
+    
+      languageMenu.addEventListener('mouseout', () => {
+        timeoutId = setTimeout(() => {
+          languageMenu.style.display = 'none';
+        }, 100); // Adjust the duration (in milliseconds) as needed
+      });
+    </script>
+
+  
+
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="text-white font-weight-light text-uppercase font-weight-bold">Contact Us</h1>
+            <p class="breadcrumb-custom"><a href="index.html">Home</a> <span class="mx-2">&gt;</span> <span>Contact</span></p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+
+            
+
+            <form action="send_email.php" method="POST" class="p-5 bg-white">
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" name="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" name="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" name="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" name="subject" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          <div class="col-md-5">
+            
+            <div class="p-4 mb-3 bg-white">
+              <div class="p-4 mb-3 bg-white">
+                <p class="mb-0 font-weight-bold">Address</p>
+                <p class="mb-4">444 Traian Street, Galati, Romania</p>
+            
+                <p class="mb-0 font-weight-bold">Phone</p>
+                <p class="mb-4"><a href="tel:+40729290859">+40729 290 859</a></p>
+            
+                <p class="mb-0 font-weight-bold">Email Address</p>
+                <p class="mb-0"><a href="mailto:office@medartgroup.com">office@medartgroup.com</a></p>
+              </div>
+            </div>
+            
+            
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">Request a Quote</h3>
+              <p>If you would like to receive a quote for our services, please provide the following information in your message:</p>
+              <ul>
+                <li>What do you have to bring?</li>
+                <li>What are the loading and delivery locations?</li>
+                <li>When is the load ready to be picked up and when is the delivery desired?</li>
+                <li>Is the load palletized or bulk?</li>
+                <ul>
+                  <li>If it is palletized, how big are the pallets and how many are there?</li>
+                  <li>If it is loose, how many meters of floor does it occupy and how many cubic meters does the goods have?</li>
+                </ul>
+                <li>What is the tonnage / weight of the goods?</li>
+                <li>Other specific information?</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <!-- Paste your Google Maps embed code or link here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d690.3643025661909!2d28.035078556691737!3d45.47205914578138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dfb1a17eb387%3A0xa62d20143ec19e3f!2sMedart%20Group!5e1!3m2!1sen!2sro!4v1690979009170!5m2!1sen!2sro" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <footer class="footer-04">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 mb-4">
+            <h2 class="footer-heading">
+              <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo" />
+              </a>
+            </h2>
+            <ul class="list-unstyled">
+              <li><a><span class="icon"><i class="fas fa-map-marker-alt"></i></span>   444 Traian Street, Galati, Romania</a></li>
+              <li><a href="tel:+40729290859"><span class="icon"><i class="fas fa-phone"></i></span><span class="text">   +40729 290 859</span></a></li>
+              <li><a href="mailto:office@medartgroup.com"><span class="icon"><i class="fas fa-envelope"></i></span><span class="text">   office@medartgroup.com</span></a></li>
+              
+
+      </ul>
+    					</div>
+          <div class="col-md-4 mb-4">
+					  
+          </div>
+					<div class="col-md-4 mb-4">
+						<h2 class="footer-heading">Our Services</h2>
+						<ul class="list-unstyled">
+              <li><a href="domestic-and-international-freight-transport.html" class="py-1 d-block">Domestic and International Freight Transport</a></li>
+              <li><a href="oversized-transport.html" class="py-1 d-block">Oversized Transport</a></li>
+              <li><a href="refrigerated-transport.html" class="py-1 d-block">Refrigerated Transport</a></li>
+            </ul>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="w-100 mt-5 border-top py-5">
+				<div class="container">
+					<div class="row">
+	          <div class="col-md-6 col-lg-8">
+
+	            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Medart &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	          <div class="col-md-6 col-lg-4 text-md-right">
+	          	<p class="mb-0 list-unstyled">
+	          		<a class="mr-md-3" href="terms.html">Terms</a>
+	          		<a class="mr-md-3" href="privacy.html">Privacy</a>
+              </p>
+	          </div>
+	        </div>
+				</div>
+			</div>
+		</footer>
+  </div>
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up text-black"></i></a>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
